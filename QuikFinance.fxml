@@ -85,16 +85,16 @@
                               <Label text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                               <Label text="Amount" GridPane.columnIndex="5" GridPane.rowIndex="2" />
                               <Label text="Running Balance" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-                              <TextField GridPane.rowIndex="3" />
-                              <TextField GridPane.rowIndex="4" />
-                              <TextField GridPane.rowIndex="5" />
-                              <TextField GridPane.rowIndex="6" />
-                              <TextField GridPane.rowIndex="7" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextField fx:id="DateTextField1" GridPane.rowIndex="3" />
+                              <TextField fx:id="DateTextField2" GridPane.rowIndex="4" />
+                              <TextField fx:id="DateTextField3" GridPane.rowIndex="5" />
+                              <TextField fx:id="DateTextField4" GridPane.rowIndex="6" />
+                              <TextField fx:id="DateTextField5" GridPane.rowIndex="7" />
+                              <TextField fx:id="DescriptionTextField1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="DescriptionTextField2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="DescriptionTextField3" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="DescriptionTextField4" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField fx:id="DescriptionTextField5" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="row1" />
@@ -126,16 +126,16 @@
                                  </toggleGroup>
                               </ToggleButton>
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" toggleGroup="$row5" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="6" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="7" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                              <TextField fx:id="AmountTextField1" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <TextField fx:id="AmountTextField2" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <TextField fx:id="AmountTextField3" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                              <TextField fx:id="AmountTextField4" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                              <TextField fx:id="AmountTextField5" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                              <TextField fx:id="BalanceTextField1" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                              <TextField fx:id="BalanceTextField2" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                              <TextField fx:id="BalanceTextField3" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                              <TextField fx:id="BalanceTextField4" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                              <TextField fx:id="BalanceTextField5" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="7" />
                               <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Housing" />
@@ -224,18 +224,18 @@
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="9" />
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="10" />
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="10" />
-                              <TextField GridPane.rowIndex="10" />
-                              <TextField GridPane.rowIndex="9" />
-                              <TextField GridPane.rowIndex="8" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="10" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="8" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="9" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="10" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="9" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                              <TextField fx:id="DateTextField8" GridPane.rowIndex="10" />
+                              <TextField fx:id="DateTextField7" GridPane.rowIndex="9" />
+                              <TextField fx:id="DateTextField6" GridPane.rowIndex="8" />
+                              <TextField fx:id="DescriptionTextField6" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <TextField fx:id="DescriptionTextField7" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <TextField fx:id="DescriptionTextField8" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <TextField fx:id="AmountTextField6" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                              <TextField fx:id="AmountTextField7" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                              <TextField fx:id="AmountTextField8" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                              <TextField fx:id="BalanceTextField6" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                              <TextField fx:id="BalanceTextField7" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                              <TextField fx:id="BalanceTextField8" editable="false" GridPane.columnIndex="6" GridPane.rowIndex="10" />
                            </children>
                            <padding>
                               <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
