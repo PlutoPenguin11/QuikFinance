@@ -47,7 +47,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuikFinanceController">
    <children>
       <TabPane minHeight="500.0" minWidth="800.0" tabClosingPolicy="UNAVAILABLE">
          <tabs>
@@ -55,83 +55,88 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <GridPane hgap="8.0" vgap="8.0">
+                        <GridPane hgap="8.0" vgap="8.0" AnchorPane.bottomAnchor="42.5" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="0.0">
                            <columnConstraints>
                               <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" />
-                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
                               <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                            </columnConstraints>
                            <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Label text="Date" />
-                              <Label text="Description" GridPane.columnIndex="1" />
-                              <Label text="Category" GridPane.columnIndex="2" />
-                              <Label text="Paid" GridPane.columnIndex="3" />
-                              <Label text="Amount" GridPane.columnIndex="5" />
-                              <Label text="Running Balance" GridPane.columnIndex="6" />
-                              <TextField GridPane.rowIndex="1" />
-                              <TextField GridPane.rowIndex="2" />
+                              <Label text="Date" GridPane.rowIndex="2" />
+                              <Label text="Description" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Category" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Label text="Amount" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <Label text="Running Balance" GridPane.columnIndex="6" GridPane.rowIndex="2" />
                               <TextField GridPane.rowIndex="3" />
                               <TextField GridPane.rowIndex="4" />
                               <TextField GridPane.rowIndex="5" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField GridPane.rowIndex="6" />
+                              <TextField GridPane.rowIndex="7" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                              <ToggleButton mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="row1" />
                                  </toggleGroup>
                               </ToggleButton>
-                              <ToggleButton mnemonicParsing="false" text="Received" toggleGroup="$row1" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                              <Label text="Received" GridPane.columnIndex="4" />
-                              <ToggleButton mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" toggleGroup="$row1" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+                              <Label text="Received" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="row2" />
                                  </toggleGroup>
                               </ToggleButton>
-                              <ToggleButton mnemonicParsing="false" text="Received" toggleGroup="$row2" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                              <ToggleButton mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" toggleGroup="$row2" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="5">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="row3" />
                                  </toggleGroup>
                               </ToggleButton>
-                              <ToggleButton mnemonicParsing="false" text="Received" toggleGroup="$row3" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                              <ToggleButton mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" toggleGroup="$row3" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="row4" />
                                  </toggleGroup>
                               </ToggleButton>
-                              <ToggleButton mnemonicParsing="false" text="Received" toggleGroup="$row4" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                              <ToggleButton mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" toggleGroup="$row4" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="row5" />
                                  </toggleGroup>
                               </ToggleButton>
-                              <ToggleButton mnemonicParsing="false" text="Received" toggleGroup="$row5" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" toggleGroup="$row5" GridPane.columnIndex="4" GridPane.rowIndex="7" />
                               <TextField GridPane.columnIndex="5" GridPane.rowIndex="3" />
                               <TextField GridPane.columnIndex="5" GridPane.rowIndex="4" />
                               <TextField GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="7" />
                               <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="3" />
                               <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="4" />
                               <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                              <MenuButton mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Housing" />
                                     <MenuItem mnemonicParsing="false" text="Transportation" />
@@ -141,46 +146,84 @@
                                     <MenuItem mnemonicParsing="false" text="Other" />
                                  </items>
                               </MenuButton>
-                              <MenuButton mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                    <MenuItem mnemonicParsing="false" text="Housing" />
+                                    <MenuItem mnemonicParsing="false" text="Transportation" />
+                                    <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
                                  </items>
                               </MenuButton>
-                              <MenuButton mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="5">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                    <MenuItem mnemonicParsing="false" text="Housing" />
+                                    <MenuItem mnemonicParsing="false" text="Transportation" />
+                                    <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
                                  </items>
                               </MenuButton>
-                              <MenuButton mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="6">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                    <MenuItem mnemonicParsing="false" text="Housing" />
+                                    <MenuItem mnemonicParsing="false" text="Transportation" />
+                                    <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
                                  </items>
                               </MenuButton>
-                              <MenuButton mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="7">
                                  <items>
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                    <MenuItem mnemonicParsing="false" text="Housing" />
+                                    <MenuItem mnemonicParsing="false" text="Transportation" />
+                                    <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
                                  </items>
                               </MenuButton>
+                              <TextField GridPane.columnIndex="6" />
+                              <Label text="Starting Balance -&gt;" GridPane.columnIndex="5" />
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Housing" />
+                                  <MenuItem mnemonicParsing="false" text="Transportation" />
+                                    <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
+                                </items>
+                              </MenuButton>
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Housing" />
+                                  <MenuItem mnemonicParsing="false" text="Transportation" />
+                                    <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
+                                </items>
+                              </MenuButton>
+                              <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                <items>
+                                    <MenuItem mnemonicParsing="false" text="Housing" />
+                                  <MenuItem mnemonicParsing="false" text="Transportation" />
+                                  <MenuItem mnemonicParsing="false" text="Education" />
+                                    <MenuItem mnemonicParsing="false" text="Groceries" />
+                                    <MenuItem mnemonicParsing="false" text="Entertainment" />
+                                    <MenuItem mnemonicParsing="false" text="Other" />
+                                </items>
+                              </MenuButton>
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                              <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="10" />
                            </children>
                            <padding>
                               <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
