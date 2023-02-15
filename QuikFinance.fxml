@@ -186,7 +186,7 @@
                                     <MenuItem mnemonicParsing="false" text="Other" />
                                  </items>
                               </MenuButton>
-                              <TextField GridPane.columnIndex="6" />
+                              <TextField fx:id="StartingBalanceTextField" GridPane.columnIndex="6" />
                               <Label text="Starting Balance -&gt;" GridPane.columnIndex="5" />
                               <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Category" GridPane.columnIndex="2" GridPane.rowIndex="8">
                                 <items>
