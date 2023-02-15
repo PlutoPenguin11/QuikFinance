@@ -224,6 +224,18 @@
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="9" />
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Paid" GridPane.columnIndex="3" GridPane.rowIndex="10" />
                               <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Received" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                              <TextField GridPane.rowIndex="10" />
+                              <TextField GridPane.rowIndex="9" />
+                              <TextField GridPane.rowIndex="8" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                              <TextField GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                              <TextField editable="false" GridPane.columnIndex="6" GridPane.rowIndex="10" />
                            </children>
                            <padding>
                               <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
