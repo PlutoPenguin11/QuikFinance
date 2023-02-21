@@ -1,6 +1,6 @@
 package quikConfig;
 //this is the class for creating categories for whatever you are buying !!!????
-//
+///
 public class CategoryClass {
 	private int itemPrice;
 	private String itemCategory = null;
