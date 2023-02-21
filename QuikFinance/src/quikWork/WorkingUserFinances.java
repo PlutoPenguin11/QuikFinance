@@ -6,7 +6,7 @@ public class WorkingUserFinances {
 	public static void main(String[] args) {
 		CategoryClass item1;
 		item1 = new CategoryClass("uhhh entertainment",10);
-		item1.printCategory();
+		item1.printInfo();
 	}
 
 }
