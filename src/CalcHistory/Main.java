@@ -1,4 +1,4 @@
-package CalcHistory;
+package TransactionHistory;
 
 public class Main {
 
