@@ -1,6 +1,6 @@
 package quikWork;
 import quikConfig.CategoryClass;
-//main classs///
+//main classs//
 public class WorkingUserFinances {
 
 	public static void main(String[] args) {
