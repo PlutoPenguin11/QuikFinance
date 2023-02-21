@@ -4,4 +4,4 @@
 Product owner: Joe Bowling  
 Scrum master: Josh Pokorzynski  
 Team leader: Emily Burley  
-Developers: Derek Schramm, Filip Cvetkovski  
+Developers: Derek Schramm and Filip Cvetkovski  
