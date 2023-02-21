@@ -1,7 +1,2 @@
 # QuikFinance
-## An application to track and analyze spending.
-
-Product owner: Joe Bowling  
-Scrum master: Josh Pokorzynski  
-Team leader: Emily Burley  
-Developers: Derek Schramm and Filip Cvetkovski  
+CSI 2999 Project
