@@ -2,23 +2,29 @@ package quikConfig;
 //this is the class for creating categories for whatever you are buying !!!????
 //
 public class CategoryClass {
-	private int itemPrice;
+	private int totalCost;
+	private int ID;
 	private String itemCategory = null;
-	public CategoryClass(String itemCategory, int itemPrice) {
-		this.itemPrice = itemPrice;
-		this.itemCategory = itemCategory;
+	
+	public CategoryClass(int ID, String itemcategory, int totalCost) {
+		this.totalCost = totalCost;
+		this.itemCategory = itemcategory;
+		this.ID = ID;
+	}
+	public int getID() {
+		return this.ID;
 	}
 	
 	public int getPrice() {
-		return this.itemPrice;
+		return this.totalCost;
 	}
 	
 	public String getCategory() {
 		return this.itemCategory;
 	}
-	
 	public void printInfo() {
-		System.out.println(getPrice());
-		System.out.println(getCategory());
+		System.out.println("Item ID:       "+ getID());
+		System.out.println("Item category: "+getCategory());
+		System.out.println("Total cost:    $"+getPrice());
 	}
 }
