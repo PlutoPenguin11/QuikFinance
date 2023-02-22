@@ -1,51 +1,39 @@
-package Ledger;
+package quikConfig;
 
 public class Transaction {
     //Could store as ID or as string
-    private Category category;
-    //TODO: Decide specific data type for price
-    //maybe store as int in cents and divide when displaying
+    private CategoryClass category;
+    //store as int in cents
     protected int price;
     private String date;
     private String description;
     private boolean wasPaid;
 
-    public Transaction(Category category, double price, String date, boolean wasPaid) {
+    public Transaction(CategoryClass category, int amount, String date, boolean wasPaid) {
         this.category = category;
-        this.price = (int) price * 100; //Typecast to int to maybe minimize memory leaks?
+        this.price = amount;
         this.date = date;
         this.wasPaid = wasPaid;
-        this.description = "Transaction for " + category.name;
+        this.description = "Transaction for " + category.getID();
+        category.updatePrice(amount);
     }
 
-    public Transaction(Category category, double price, String date, boolean wasPaid, String description) {
+    public Transaction(CategoryClass category, int amount, String date, boolean wasPaid, String description) {
         this.category = category;
-        this.price = (int) price * 100; //Typecast to int to maybe minimize memory leaks?
+        this.price = amount;
         this.date = date;
         this.wasPaid = wasPaid;
         this.description = description;
+        category.updatePrice(amount);
     }
 
-    //TODO: Decide if delete
-    /*public Transaction(String category, int price, String date) {
-        this.category = category;
-        this.price = price;
-        this.date = date;
-    }*/
-
-    public void setCategory(Category newCategory) {
+    public void setCategory(CategoryClass newCategory) {
         category = newCategory;
     }
 
     //Precondition: String is a valid date
     public void setDate(String newDate) {
         date = newDate;
-    }
-
-    //TODO: Maybe input as string. Need to decide.
-    //Input is same as constructor. Stores as int in number of cents.
-    public void setPrice(double newPrice) {
-        price = (int) newPrice * 100;
     }
 
     public void setStatus(boolean newStatus) {
@@ -56,8 +44,12 @@ public class Transaction {
         description = newDescription;
     }
 
+    public void setPrice(int amount) {
+        category.updatePrice(-price);
+        category.updatePrice(price = amount);
+    }
+
     //Converts cents back to $x.xx format and returns
-    //TODO: Double check right indexes
     public String getPrice() {
         String money = "" + (price * 100);
         String dollars = money.substring(0, money.length() - 2);
@@ -65,13 +57,8 @@ public class Transaction {
         return "$" + dollars + "." + cents;
     }
 
-    public Category getCategory() {
+    public CategoryClass getCategory() {
         return category;
-    }
-
-    //TODO: Convert to category string
-    public String getCategoryName() {
-        return category.name;
     }
 
     public String getDate() {
